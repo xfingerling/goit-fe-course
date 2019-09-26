@@ -33,36 +33,36 @@ img {
     margin: 0;
     padding: 0;
     vertical-align: middle;
-    margin-top: 70px;
+    padding-top: 70px;
     text-align: center;
     margin-bottom: 98px;
 }
 
 
-.menu li {
+.menu-item {
     display: inline-block;
 }
 
-.menu li:nth-child(1) {
+.menu-item:nth-child(1) {
     margin-right: 120px;
 }
 
-.menu li:nth-child(2) {
+.menu-item:nth-child(2) {
     margin-right: 102px;
 }
 
-.menu li:nth-child(3) {
+.menu-item:nth-child(3) {
     margin-right: 94px;
 }
 
-.menu a {
+.menu-link {
     text-transform: uppercase;
     text-decoration: none;
     
 }
 
-.menu a:hover,
-.menu a:focus {
+.menu-link:hover,
+.menu-link:focus {
     color: #03a9f4;
 }
 
@@ -73,13 +73,14 @@ img {
     padding: 0;
     font-size: 0;
     margin-bottom: 52px;
+    vertical-align: top;
 }
 
-.information img {
-    margin-bottom: 30px;
+.information-img {
+    margin-bottom: 32px;
 }
 
-.information h4 {
+.information-sign {
     margin-bottom: 32px;
     color: #b4ad9e;
     font-weight: 400;
@@ -87,14 +88,14 @@ img {
     text-transform: uppercase;
 }
 
-.information h2 {
+.information-caption {
     font-size: 30px;
     color: #626262;
     margin-bottom: 36px;
     font-weight: 400;
 }
 
-.information p {
+.information-text {
     color: #626262;
     line-height: 24px;
     margin: 0;
@@ -104,6 +105,7 @@ img {
     display: inline-block;
     font-size: 14px;
     margin-bottom: 130px;
+    vertical-align: top;
 }
 
 .information-item:nth-last-child(-n+2) {
@@ -116,12 +118,16 @@ img {
 
 /*button*/
 
+.button {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
 .load-button {
-    display: block;
     border: 1px solid #626262;
-    width: 164px;
-    height: 60px;
-    margin: 0 auto 70px;
+    min-width: 164px;
+    max-width: 600px;
+    min-height: 60px;
     padding: 0;
     color: #626262;
     font-size: 20px;
@@ -132,6 +138,6 @@ img {
 
 .load-button:hover,
 .load-button:focus {
-    color: #03a9f4;
+    color: rgb(3, 169, 244);
 }
 
