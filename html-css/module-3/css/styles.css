@@ -28,7 +28,7 @@ img {
 .menu {
     list-style: none;
     font-size: 14px;
-    color: #626262;
+    color: rgb(98, 98, 98);
     line-height: 24px;
     margin: 0;
     padding: 0;
@@ -63,7 +63,7 @@ img {
 
 .menu-link:hover,
 .menu-link:focus {
-    color: #03a9f4;
+    color: rgb(3, 169, 244);
 }
 
 /*information list*/
