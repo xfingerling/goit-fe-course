@@ -259,7 +259,7 @@ body {
     transition: opacity 0.3s ease;
 }
 
-.collection-link {
+.collection-card {
     font-size: 18px;
     line-height: 32px;
     color: #fff;
