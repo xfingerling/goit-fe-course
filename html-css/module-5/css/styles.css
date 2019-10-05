@@ -135,36 +135,50 @@ body {
 
 .slider-btn {
     border: none;
+    outline: none;
     width: 104px;
     height: 104px;
     background-color: rgba(78, 198, 171, 0.65);
-    color: #ffffff;
-    /* font-size: 100px;
-    font-weight: 400;
-    line-height: 11px;
-    text-transform: uppercase;
-    letter-spacing: -2px; */
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    cursor: pointer;
-    background-repeat: no-repeat;
-    background-position: center;
+    transition: background-color 0.3s ease;
 }
 
 .slider-left {
     left:0;
-    background-image: url(../img/arrow-left.png);
 }
 
 .slider-right {
     right:0;
-    background-image: url(../img/arrow-right.png);
+}
+
+.slider-left::before,
+.slider-right::before {
+    content: '';
+    width: 28px;
+    height: 28px;
+    border-left: 4px solid #fff;
+    border-top: 4px solid #fff;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.slider-left::before {
+    right: 45%;
+    transform: translate(50%, -50%) rotate(-45deg);
+}
+
+.slider-right::before {
+    left: 45%;
+    transform: translate(-50%, -50%) rotate(135deg);
 }
 
 .slider-btn:hover,
 .slider-btn:focus {
-    background-color: rgb(78, 198, 171);
+    background-color: rgba(78, 198, 171, 1);
+    cursor: pointer;
 }
 
 .sliders {
@@ -238,6 +252,11 @@ body {
     margin-right: 30px;
 }
 
+.collection-img {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
 .collection-link {
     font-size: 18px;
     line-height: 32px;
@@ -263,6 +282,7 @@ body {
     height: 40px;
     background-color: #323232;
     left: 0;
+    transition: background-color 0.3s ease;
 }
 
 .collection-price {
@@ -271,6 +291,7 @@ body {
     height: 40px;
     background-color: #8c8c8c;
     right: 0;
+    transition: background-color 0.3s ease;
 }
 
 .collection-name-wrp {
@@ -311,6 +332,7 @@ body {
     background-color: rgba(0, 0, 0, 0.55);
     position: absolute;
     opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .icon {
@@ -330,6 +352,7 @@ body {
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: center;
+    transition: background-color 0.3s ease;
 }
 
 .overlay-favorite {
