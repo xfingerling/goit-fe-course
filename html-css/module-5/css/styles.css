@@ -80,6 +80,7 @@ body {
     line-height: 11px;
     text-transform: uppercase;
     letter-spacing: -0.02em;
+    outline: none;
 }
 
 .navigation-link:hover,
@@ -240,6 +241,7 @@ body {
     margin: 0;
     margin-bottom: 96px;
     list-style: none;
+    outline: none;
 }
 
 .collection-item {
@@ -341,6 +343,8 @@ body {
 }
 
 .overlay-border {
+    border: none;
+    outline: none;
     display: inline-block;
     width: 50px;
     min-height: 50px;
@@ -399,7 +403,8 @@ body {
    transform: translateY(-50%); 
 }
 
-.overlay-border:hover {
+.overlay-border:hover,
+.overlay-border:focus {
     background-color: #1abc9c;
 }
 
