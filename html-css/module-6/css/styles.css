@@ -141,7 +141,7 @@ html {
 }
 
 .services-creativity::before {
-    background-image: url(../img/icon/_OK.png);
+    background-image: url(../img/icon/OK.png);
     height: 28px;
 }
 
