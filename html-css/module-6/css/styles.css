@@ -1,0 +1,349 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 26px;
+    margin-bottom: 126px;
+}
+
+/* LOGO */
+
+.logo {
+    color: #95e1d3;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* NAVIGATION */
+
+.navigation {
+    display: flex;
+    list-style: none;
+}
+
+.navigation-item:not(:last-child) {
+    margin-right: 58px;
+}
+
+.navigation-link {
+    text-decoration: none;
+    color: #95e1d3;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+    transition: color 0.2s linear,
+                border-bottom 0.2s linear;
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+    color: #f38181;
+    border-bottom: 3px solid #f38181;
+}
+
+/* SERVICES */
+
+.section-description {
+    margin: 0;
+    color: #333333;
+    font-family: "Kaushan Script";
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.title-box {
+    position: relative;
+    margin-bottom: 110px;
+}
+
+.section-title {
+    color: #333333;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section-title::after {
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+}
+
+.services {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 92px;
+}
+
+.services-item {
+    width: 329px;
+    padding-left: 62px;
+    position: relative;
+}
+
+.services-item::before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.services-photo::before {
+    background-image: url(../img/icon/ALARM.png);
+    height: 31px;
+} 
+
+.services-design::before {
+    background-image: url(../img/icon/LINE_GRAPH.png);
+}
+
+.services-creativity::before {
+    background-image: url(../img/icon/_OK.png);
+    height: 28px;
+}
+
+.services-seo::before {
+    background-image: url(../img/icon/BOOK_2.png);
+}
+
+.services-css::before {
+    background-image: url(../img/icon/HOME.png);
+}
+
+.services-digital::before {
+    background-image: url(../img/icon/IMAGE.png);
+}
+
+.services-item:not(:nth-last-child(-n+3)) {
+    margin-bottom: 100px;
+}
+
+.services-box-title {
+    color: #333333;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.services-box-text {
+    color: #999999;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/* TEAM */
+
+.page-team .title-box {
+    margin-bottom: 90px;
+}
+
+.team-paragraph {
+    color: #999999;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 92px;
+    width: 941px;
+}
+
+.card-team {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 106px;
+}
+
+.card-item {
+    position: relative;
+    width: 380px;
+}
+
+.overlay {
+    z-index: 1;
+    width: 380px;
+    height: 470px;
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.2s linear,
+                transform 0.2s linear;
+}
+
+.img-wrapper {
+    margin-bottom: 30px;
+}
+
+.img-wrapper::after {
+    content: '';
+    z-index: -1;
+    display: block;
+    width: 380px;
+    height: 470px;
+    background-color: #95e1d3;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card-img {
+    transition: transform 0.2s linear;
+}
+
+.card-item:hover .overlay,
+.card-item:focus .overlay {
+    opacity: 1;
+    transform: translate(-10px, -10px);
+}
+
+.card-item:hover .card-img,
+.card-item:focus .card-img {
+    transform: translate(-10px, -10px);
+}
+
+.overlay-link {
+    width: 56px;
+    height: 56px;
+    background-color: #fce38a;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color 0.2s linear;
+}
+
+.overlay-link:not(:last-child) {
+    margin-right: 1px;
+}
+
+.icon-facebook {
+    background-image: url(../img/social-icon/facebook.png);
+}
+
+.icon-twitter {
+    background-image: url(../img/social-icon/twitter.png);
+}
+
+.icon-printerest {
+    background-image: url(../img/social-icon/pinterest.png);
+}
+
+.icon-instagram {
+    background-image: url(../img/social-icon/instagram.png);
+}
+
+.overlay-link:hover,
+.overlay-link:focus {
+    background-color: #95e1d3;
+}
+
+.card-name {
+    color: #333333;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.card-position {
+    color: #999999;
+    font-family: "Roboto - Light Italic";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+    height: 64px;
+    color: #333333;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.last-word {
+    color: #f38181;
+}
+
+.footer-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-email {
+    width: 230px;
+    height: 40px;
+    border: 1px solid #e7e7e7;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.form-submit {
+    border: none;
+    width: 150px;
+    height: 40px;
+    background-color: #95e1d3;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
