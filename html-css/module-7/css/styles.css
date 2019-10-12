@@ -1,0 +1,302 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-montserrat: "Montserrat", sans-serif;                  
+    --font-roboto-slab: "Roboto Slab", serif;
+    --font-alegreya: "Alegreya", serif;
+}
+
+.container {
+    width: 934px;
+    margin: 0 auto;
+}
+
+/* NAVIGATION */
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 44px;
+    margin-bottom: 120px;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+}
+
+.navigation-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.navigation-link {
+    text-decoration: none;
+    color: #222;
+    font-family: var(--font-montserrat);
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: color 0.2s linear;
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+    color: #fed136;
+}
+
+/* SERVICES */
+
+.heading {
+    text-align: center;
+}
+
+.section-title {
+    margin: 0;
+    margin-bottom: 18px;
+    text-align: center;
+    color: #222;
+    font-family: var(--font-montserrat);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.section-description {
+    margin-bottom: 80px;
+    text-align: center;
+    color: #777;
+    font-family: var(--font-alegreya);
+    font-size: 16px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 120px;
+}
+
+.services-item {
+    width: 274px;
+    padding-top: 94px;
+    text-align: center;
+    position: relative;
+}
+
+.services-title {
+    margin-bottom: 18px;
+    color: #222;
+    font-family: var(--font-montserrat);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.45px;
+}
+
+.services-title::before {
+    display: inline-block;
+    content: '';
+    width: 68px;
+    height: 68px; 
+    border: 3px solid #fed136;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+
+}
+
+.logo-commerce::before {
+    background: url(../img/icon/Icon-Basket.png) center no-repeat;
+}
+
+.logo-web::before {
+    background: url(../img/icon/Icon-Laptop.png) center no-repeat;
+}
+
+.logo-security::before {
+    background: url(../img/icon/Icon-Locked.png) center no-repeat;
+}
+
+.services-info {
+    color: #777;
+    font-family: var(--font-roboto-slab);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.35px;
+}
+
+/* CONTACT US  */
+
+.contact-page {
+    width: 100%;
+    padding-top: 110px;
+    position: relative;
+    background-color: #222;
+}
+
+.contact-page .container::before {
+    content: '';
+    display: inline-block;
+    width: 614px;
+    height: 537px;
+    opacity: 0.3;
+    background: url(../img/Map_Image.png) no-repeat;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+}
+
+.section-title-white {
+    color: #fff;
+}
+
+/* FORM  */
+
+.form-contact {
+    padding-bottom: 114px;
+}
+
+.form-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.form-box-user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info {
+    width: 455px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.user-info:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.user-message {
+    width: 455px;
+    height: 210px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.box-btn {
+    text-align: center;
+}
+
+.form-btn {
+    min-width: 240px;
+    max-width: 400px;
+    height: 66px;
+    background-color: #fed136;
+    border: none;
+    border-radius: 5px;
+    /* Style for "Send Message" */
+    color: #fff;
+    font-family: var(--font-montserrat);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="text"]:focus,
+.user-message:focus {
+    outline: 0;
+}
+
+.user-info:required:valid,
+.user-message:valid {
+    border: 1px solid green;
+}
+
+.user-info:required:invalid,
+.user-message:invalid {
+    border: 1px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* alegreya-italic - latin */
+@font-face {
+    font-family: 'Alegreya';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Alegreya Italic'), local('Alegreya-Italic'),
+         url('../fonts/alegreya-v13-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/alegreya-v13-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+ /* roboto-slab-regular - latin */
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
+         url('../fonts/roboto-slab-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-slab-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
