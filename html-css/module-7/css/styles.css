@@ -148,6 +148,7 @@ html {
     background-color: #222;
 }
 
+
 .contact-page .container::before {
     content: '';
     display: inline-block;
@@ -155,6 +156,7 @@ html {
     height: 537px;
     opacity: 0.3;
     background: url(../img/Map_Image.png) no-repeat;
+    background-size: 614px 537px;
     position: absolute;
     bottom: 20px;
     right: 0;
@@ -238,27 +240,6 @@ input[type="text"]:focus,
 .user-message:invalid {
     border: 1px solid red;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
