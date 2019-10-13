@@ -148,7 +148,6 @@ html {
     background-color: #222;
 }
 
-
 .contact-page .container::before {
     content: '';
     display: inline-block;
@@ -156,7 +155,6 @@ html {
     height: 537px;
     opacity: 0.3;
     background: url(../img/Map_Image.png) no-repeat;
-    background-size: 614px 537px;
     position: absolute;
     bottom: 20px;
     right: 0;
@@ -170,6 +168,8 @@ html {
 
 .form-contact {
     padding-bottom: 114px;
+    display: flex;
+    flex-direction: column;
 }
 
 .form-box {
@@ -204,11 +204,8 @@ html {
     resize: none;
 }
 
-.box-btn {
-    text-align: center;
-}
-
 .form-btn {
+    margin: 0 auto;
     min-width: 240px;
     max-width: 400px;
     height: 66px;
@@ -233,16 +230,16 @@ input[type="text"]:focus,
 
 .user-info:required:valid,
 .user-message:valid {
-    border: 1px solid green;
+    border: 1px solid rgb(94, 246, 94);
 }
 
 .user-info:required:invalid,
 .user-message:invalid {
-    border: 1px solid red;
+    border: 1px solid rgb(246, 83, 83);
 }
 
 
-
+/* FONTS  */
 
 /* alegreya-italic - latin */
 @font-face {
