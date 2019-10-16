@@ -229,13 +229,13 @@ input[type="text"]:focus,
     outline: 0;
 }
 
-.user-info:required:valid,
-.user-message:valid {
+.user-info:required:valid:focus,
+.user-message:valid:focus {
     border: 1px solid rgb(94, 246, 94);
 }
 
-.user-info:required:invalid,
-.user-message:invalid {
+.user-info:required:invalid:focus,
+.user-message:invalid:focus {
     border: 1px solid rgb(246, 83, 83);
 }
 
