@@ -1,0 +1,13 @@
+@media (min-width: 768px) {
+  .container {
+    width: 668px;
+  }
+
+  .baner {
+      display: flex;
+      padding-top: 46px;
+    min-height: 700px;
+    background-image: linear-gradient(rgba(26, 25, 21, 0.15) 100%, rgb(0, 0, 0)),
+      url(../img/baner.jpg);
+  }
+}
