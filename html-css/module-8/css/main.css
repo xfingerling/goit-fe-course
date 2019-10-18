@@ -18,7 +18,6 @@ img {
 }
 
 .container {
-  width: 300px;
   margin: 0 auto;
 }
 
@@ -36,14 +35,7 @@ img {
   text-align: center;
 }
 
-.header-section {
-  padding-top: 30px;
-  margin-bottom: 34px;
-}
 
-.header-login {
-  margin-bottom: 122px;
-}
 
 .header-link {
   text-decoration: none;
@@ -127,9 +119,7 @@ img {
   text-align: center;
 }
 
-.card-item:not(:last-child) {
-  margin-bottom: 30px;
-}
+
 
 .box-img {
   margin: 0 auto;
@@ -205,4 +195,20 @@ img {
 }
 
 @media (max-width: 767px) {
+  .container {
+    width: 300px;
+  }
+
+  .header-section {
+    padding-top: 30px;
+    margin-bottom: 34px;
+  }
+  
+  .header-login {
+    margin-bottom: 122px;
+  }
+
+  .card-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }

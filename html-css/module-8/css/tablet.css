@@ -4,10 +4,40 @@
   }
 
   .baner {
-      display: flex;
-      padding-top: 46px;
     min-height: 700px;
-    background-image: linear-gradient(rgba(26, 25, 21, 0.15) 100%, rgb(0, 0, 0)),
-      url(../img/baner.jpg);
+  }
+
+  .header-section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding-top: 46px;
+    margin-bottom: 158px;
+  }
+
+  .header-title {
+    margin-bottom: 40px;
+  }
+
+  .header-description {
+    margin-bottom: 34px;
+  }
+
+  .page-main {
+    margin-bottom: 70px;
+  }
+  
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card-item:nth-child(odd) {
+    margin-right: 34px;
+  }
+
+  .card-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 60px;
   }
 }
