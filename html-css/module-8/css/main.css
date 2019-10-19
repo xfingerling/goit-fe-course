@@ -90,6 +90,7 @@ img {
   font-weight: 700;
   cursor: pointer;
   transition: transform 0.2s linear;
+  outline: none;
 }
 
 .header-btn:hover,
@@ -194,6 +195,7 @@ img {
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
+  outline: none;
   transition: color 0.2s linear, background-color 0.2s linear;
 }
 
