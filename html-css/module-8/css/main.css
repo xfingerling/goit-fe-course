@@ -36,24 +36,22 @@ img {
 }
 
 .header-link {
+  display: inline-block;
   text-decoration: none;
   color: #fff;
   font-family: var(--font-montserrat);
   font-size: 14px;
   font-weight: 700;
-}
-
-.header-link:not(:last-child) {
-  margin-right: 20px;
-}
-
-.border-link {
-  display: inline-block;
   padding: 8px 0;
   width: 90px;
   height: 36px;
-  border: 2px solid #fff;
+  border: 2px solid transparent;
   border-radius: 50px;
+}
+
+.header-link:hover,
+.header-link:focus {
+  border: 2px solid #fff;
 }
 
 .logo-link {
@@ -207,7 +205,7 @@ img {
 
 @media (max-width: 767px) {
   .container {
-    width: 300px;
+    max-width: 300px;
   }
 
   .header-section {
@@ -216,7 +214,7 @@ img {
   }
 
   .header-login {
-    margin-bottom: 122px;
+    margin-bottom: 115px;
   }
 
   .card-item {

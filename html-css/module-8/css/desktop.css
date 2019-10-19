@@ -1,6 +1,6 @@
 @media (min-width: 939px) {
   .container {
-    width: 939px;
+    max-width: 939px;
   }
 
   .card {
