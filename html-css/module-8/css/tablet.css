@@ -3,10 +3,6 @@
     width: 668px;
   }
 
-  .baner {
-    min-height: 700px;
-  }
-
   .header-section {
     display: flex;
     justify-content: space-between;
@@ -26,15 +22,21 @@
   .page-main {
     margin-bottom: 70px;
   }
-  
+
+  .main-title {
+    margin-bottom: 32px;
+  }
+
   .card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
+}
 
+@media (max-width: 938px) {
   .card-item:nth-child(odd) {
-    margin-right: 34px;
+    margin-right: 52px;
   }
 
   .card-item:not(:nth-last-child(-n + 2)) {
