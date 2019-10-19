@@ -3,6 +3,10 @@
     width: 668px;
   }
 
+  .baner {
+    min-height: 700px;
+  }
+
   .header-section {
     display: flex;
     justify-content: space-between;
