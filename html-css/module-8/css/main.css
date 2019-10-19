@@ -48,7 +48,8 @@ img {
 }
 
 .border-link {
-  padding: 7px 18px;
+  display: inline-block;
+  padding: 8px 0;
   width: 90px;
   height: 36px;
   border: 2px solid #fff;
@@ -88,6 +89,12 @@ img {
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
+  transition: transform 0.2s linear;
+}
+
+.header-btn:hover,
+.header-btn:focus {
+  transform: scale(1.1);
 }
 
 /* MAIN  */
@@ -187,6 +194,13 @@ img {
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
+  transition: color 0.2s linear, background-color 0.2s linear;
+}
+
+.main-btn:hover,
+.main-btn:focus {
+  color: #fff;
+  background-color: #ff4e50;
 }
 
 @media (max-width: 767px) {
