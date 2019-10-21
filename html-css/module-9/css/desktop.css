@@ -1,0 +1,5 @@
+@media (min-width: 992px) {
+    .team-card [class*="col-"]:not(:nth-last-child(-n + 4)) {
+      margin-bottom: 30px;
+    }
+  }

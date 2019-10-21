@@ -1,0 +1,242 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+}
+
+body {
+  /* margin: 0 -15px; */
+}
+
+.baner {
+  height: 540px;
+  margin-bottom: 68px;
+  background-image: linear-gradient(rgba(26, 25, 21, 0.15) 100%, rgb(0, 0, 0)),
+    url(../img/baner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.menu {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.menu-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-family: var(--font-montserrat);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px 14px;
+  min-width: 90px;
+  height: 36px;
+  border: 2px solid transparent;
+  border-radius: 50px;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  border: 2px solid #fff;
+}
+
+.logo-link {
+  display: inline-block;
+}
+
+.header-title {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  font-family: var(--font-montserrat);
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header-description {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  font-family: var(--font-roboto);
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.header-btn {
+  display: block;
+  margin: 0 auto;
+  min-width: 280px;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  background-color: #ff4e50;
+  color: #fff;
+  font-family: var(--font-montserrat);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s linear;
+  outline: none;
+}
+
+.header-btn:hover,
+.header-btn:focus {
+  transform: scale(1.1);
+}
+
+/* MAIN  */
+
+.main-title {
+  text-align: center;
+  color: #333;
+  font-family: var(--font-montserrat);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.card {
+  margin-bottom: 30px;
+  list-style: none;
+}
+
+.card-item {
+  width: 212px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.box-img {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 121px;
+  height: 121px;
+  position: relative;
+}
+
+.box-img::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.icon-tv::after {
+  background-color: #ff4e50;
+  background-image: url(../img/icon/icon-tv.png);
+  background-position: 8px 7px;
+}
+
+.icon-potion::after {
+  background-color: #ffa507;
+  background-image: url(../img/icon/icon-potion.png);
+  background-position: 9px 8px;
+}
+
+.icon-coffee::after {
+  background-color: #1cd7ad;
+  background-image: url(../img/icon/icon-coffee.png);
+  background-position: 8px 6px;
+}
+
+.icon-airplane::after {
+  background-color: #4e73db;
+  background-image: url(../img/icon/icon-airplane.png);
+  background-position: 7px 8px;
+}
+
+.card-name {
+  margin-bottom: 16px;
+  color: #333;
+  font-family: var(--font-montserrat);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.card-info {
+  color: #666;
+  font-family: var(--font-roboto);
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.main-btn {
+  display: block;
+  min-width: 280px;
+  height: 40px;
+  margin: 0 auto;
+  border: 2px solid #ff4e50;
+  border-radius: 50px;
+  background-color: transparent;
+  color: #ff4e50;
+  font-family: var(--font-montserrat);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  transition: color 0.2s linear, background-color 0.2s linear;
+}
+
+.main-btn:hover,
+.main-btn:focus {
+  color: #fff;
+  background-color: #ff4e50;
+}
+
+@media (max-width: 767px) {
+  .menu {
+    margin-bottom: 38px;
+  }
+
+  .menu > [class*="col-"]:first-child {
+    margin-bottom: 114px;
+  }
+
+  .header-title {
+    margin-bottom: 10px;
+  }
+
+  .header-description {
+    margin-bottom: 20px;
+  }
+
+  .page-main {
+    margin-bottom: 58px;
+  }
+
+  .main-content > [class*="col-"]:nth-child(1) {
+    margin-bottom: 14px;
+  }
+
+  .main-content > [class*="col-"]:nth-child(2) {
+    margin-bottom: 30px;
+  }
+
+  .team-card [class*="col-"]:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+
+
+
+
+
