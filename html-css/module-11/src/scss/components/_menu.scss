@@ -1,0 +1,35 @@
+.menu {
+  min-width: 620px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__link {
+  @extend %link;
+  
+  text-decoration: none;
+  color: $primary-white-color;
+  font-family: $font-montserrat;
+  font-size: calcRem(14);
+  text-transform: uppercase;
+  transition: color 0.2s linear, border-bottom 0.2s linear;
+
+  &:hover,
+  &:focus {
+    padding-bottom: 10px;
+    color: $primary-accent-color;
+    border-bottom: 3px solid $primary-accent-color;
+  }
+}
+
+.menu__svg {
+    display: block;
+    width: 18px;
+    height: 18px;
+    fill: $primary-white-color;
+    transition: fill 0.2s linear;
+
+    &:hover {
+        fill: $primary-accent-color;
+      }
+  }

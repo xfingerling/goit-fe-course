@@ -1,0 +1,18 @@
+.baner {
+    margin-bottom: 46px;
+    height: 1000px;
+    background-image: $foto-filter,
+      url(../img/baner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .baner {
+    background-image: $foto-filter,
+      url(../img/baner@2x.jpg);
+  }
+}
+  }

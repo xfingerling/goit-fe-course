@@ -1,0 +1,65 @@
+.team-card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 82px;
+}
+
+.team-card__item {
+  @extend %list;
+  
+  text-align: center;
+  position: relative;
+
+  &:hover .overlay,
+  &:focus .overlay {
+    opacity: 0.9;
+    transform: translate(-10px, -10px);
+  }
+
+  &:hover .overlay__link,
+  &:focus .overlay__link {
+    opacity: 1;
+  }
+
+  &:hover .team-card__img,
+  &:focus .team-card__img {
+    transform: translate(-10px, -10px);
+  }
+}
+
+.team-card__wrapper-img {
+  margin-bottom: 32px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 380px;
+    height: 470px;
+    background-color: $primary-svg-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.team-card__img {
+  transition: transform 0.2s linear;
+}
+
+.team-card__name {
+  margin-bottom: 14px;
+  color: $primary-black-color;
+  font-family: $font-montserrat;
+  font-size: calcRem(14);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.team-card__position {
+  color: $primary-grey-color;
+  font-family: $font-roboto;
+  font-style: italic;
+  font-size: calcRem(15);
+  line-height: calcRem(24);
+}

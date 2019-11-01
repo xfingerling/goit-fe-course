@@ -1,0 +1,45 @@
+.overlay {
+  @include center-flex("all");
+
+  width: 380px;
+  height: 470px;
+  background-color: $primary-svg-color;
+  background-image: $foto-filter;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.2s linear, transform 0.2s linear;
+}
+
+.overlay__link {
+  @include center-flex("all");
+  @extend %link;
+
+  width: 56px;
+  height: 56px;
+  background-color: $primary-accent-color;
+  transition: background-color 0.2s linear;
+
+  &:not(:last-child) {
+    margin-right: 1px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $after-elem-color;
+  }
+
+  &:hover .overlay__svg,
+  &:focus .overlay__svg {
+    fill: $primary-white-color;
+  }
+}
+
+.overlay__svg {
+  width: 50%;
+  height: 50%;
+  fill: $after-elem-color;
+  transition: fill 0.2s linear;
+}

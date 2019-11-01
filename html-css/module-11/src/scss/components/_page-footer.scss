@@ -1,0 +1,18 @@
+.page-footer {
+  @include center-flex("ver");
+  
+  justify-content: space-between;
+  padding-top: 24px;
+  margin-bottom: 24px;
+  border-top: 1px solid $top-line-footer;
+}
+
+.page-footer__text {
+  color: $primary-black-color;
+  font-family: $font-montserrat;
+  font-size: calcRem(14);
+}
+
+.page-footer__text--color {
+  color: $after-elem-color;
+}

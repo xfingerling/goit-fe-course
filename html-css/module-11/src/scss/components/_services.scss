@@ -1,0 +1,46 @@
+.services {
+  margin-bottom: 92px;
+}
+
+.services-card {
+  @extend %list;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services-card__item {
+  width: 332px;
+  padding-left: 62px;
+  position: relative;
+
+  &:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 100px;
+  }
+}
+
+.services-card__svg {
+  display: block;
+  width: 32px;
+  height: 32px;
+  fill: $primary-svg-color;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.services-card__title {
+  color: $primary-black-color;
+  font-family: $font-montserrat;
+  font-size: calcRem(14);
+  vertical-align: top;
+  text-transform: uppercase;
+}
+
+.services-card__desc {
+  color: $primary-grey-color;
+  font-family: $font-roboto;
+  font-size: calcRem(15);
+  line-height: calcRem(24)
+}

@@ -1,0 +1,39 @@
+.subscribe-form {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.subscribe-form__user-email {
+  width: 230px;
+  height: 40px;
+  padding-left: 12px;
+  border: 1px solid $border-form-color;
+  background-color: $primary-white-color;
+
+  &:required:valid:focus {
+    border: 1px solid $correctly-color;
+  }
+
+  &:required:invalid:focus {
+    border: 1px solid $error-color;
+  }
+}
+
+.subscribe-form__btn {
+  @extend %button;
+
+  display: inline-block;
+  min-width: 150px;
+  height: 40px;
+  background-color: $primary-svg-color;
+  color: $primary-white-color;
+  font-family: $font-montserrat;
+  font-size: calcRem(14);
+  font-weight: 700;
+  text-transform: uppercase;
+  outline: none;
+}
+
+input[type="email"]:focus {
+  outline: none;
+}

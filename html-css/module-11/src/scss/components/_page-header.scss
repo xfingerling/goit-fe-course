@@ -1,0 +1,48 @@
+.page-header {
+  text-align: center;
+}
+
+.page-header__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 28px;
+  margin-bottom: 178px;
+}
+
+.page-header__slogan {
+  margin-bottom: 42px;
+  color: $primary-white-color;
+  font-family: $font-kaushan-script;
+  font-size: calcRem(72);
+}
+
+.page-header__title {
+  margin: 0;
+  margin-bottom: 124px;
+  color: $primary-white-color;
+  font-family: $font-montserrat;
+  font-size: calcRem(150);
+  font-weight: 700;
+  line-height: calcRem(140);
+  text-transform: uppercase;
+}
+
+.page-header__btn {
+  @extend %button;
+
+  min-width: 160px;
+  height: 40px;
+  border: 3px solid $primary-white-color;
+  background-color: transparent;
+  color: $primary-white-color;
+  font-family: $font-montserrat;
+  font-size: calcRem(14);
+  font-weight: 700;
+  outline: none;
+  transition: transform 0.2s linear;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

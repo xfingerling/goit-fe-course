@@ -1,0 +1,11 @@
+@function calcRem($pixels, $mainFont: $main-font-size) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($mainFont)) {
+    $mainFont: $mainFont * 1px;
+  }
+
+  @return $pixels / $mainFont * 1rem;
+}
