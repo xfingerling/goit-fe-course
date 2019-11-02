@@ -317,6 +317,21 @@ template {
 [hidden] {
   display: none; }
 
+html {
+  box-sizing: border-box;
+  font-size: 14px; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
 .container {
   width: 1200px;
   margin: 0 auto; }
@@ -459,6 +474,7 @@ template {
   left: 0; }
 
 .services-card__title {
+  margin-bottom: 14px;
   color: #333;
   font-family: "Montserrat", Arial, sans-serif;
   font-size: 1rem;
